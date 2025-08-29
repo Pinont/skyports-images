@@ -1,6 +1,6 @@
 FROM azul/zulu-openjdk:8
 
-RUN apt-get update && apt-get install -y curl wget iproute2 net-tools && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl wget iproute2 && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app/data
 

@@ -2,7 +2,7 @@ name: build java Images
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - docker_images/java/**
 jobs:

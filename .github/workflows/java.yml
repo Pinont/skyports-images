@@ -138,6 +138,8 @@ jobs:
                 echo "Single-arch build (AMD64 only) for ${base_image}"
                 platforms="linux/amd64"
             fi
+
+            cd docker_images/java/
             
             # Build with buildx
             docker buildx build \

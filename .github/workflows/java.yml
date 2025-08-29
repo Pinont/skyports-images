@@ -1,10 +1,15 @@
 name: build java Images
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - docker_images/java/**
+      - "docker_images/java/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "docker_images/java/**"
+  workflow_dispatch:
+
 jobs:
   push:
     name: "skyports_images:java_${{ matrix.tag }}"

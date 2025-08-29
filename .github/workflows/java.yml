@@ -2,7 +2,7 @@ name: Build & Push Java Images
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
     paths:
       - "docker_images/java/**"
   pull_request:

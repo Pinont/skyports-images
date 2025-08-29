@@ -13,7 +13,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: pinont/skyports-images/java
+  IMAGE_NAME: ${{ github.repository.toLowerCase() }}/java
 
 jobs:
   detect-changes:
@@ -150,7 +150,7 @@ jobs:
               --cache-from type=gha,scope=java-${version_number} \
               --cache-to type=gha,mode=max,scope=java-${version_number} \
               --push \
-              "./${version}"
+              "./${version}/Dockerfile"
             
             if [ $? -eq 0 ]; then
               echo "✅ Successfully pushed Java ${version_number}"

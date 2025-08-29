@@ -140,7 +140,7 @@ jobs:
             fi
 
             cd docker_images/java/
-            
+
             # Build with buildx
             docker buildx build \
               --platform "${platforms}" \
@@ -150,7 +150,7 @@ jobs:
               --cache-from type=gha,scope=java-${version_number} \
               --cache-to type=gha,mode=max,scope=java-${version_number} \
               --push \
-              "docker_images/java/${version}"
+              "./${version}"
             
             if [ $? -eq 0 ]; then
               echo "✅ Successfully pushed Java ${version_number}"

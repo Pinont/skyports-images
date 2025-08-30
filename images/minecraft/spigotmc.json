@@ -1,0 +1,42 @@
+{
+  "Image": "ghcr.io/pinont/skyports-image/java:24",
+  "AltImages": [
+    "ghcr.io/pinont/skyports-image/java:21",
+    "ghcr.io/pinont/skyports-image/java:17",
+    "ghcr.io/pinont/skyports-image/java:16",
+    "ghcr.io/pinont/skyports-image/java:11",
+    "ghcr.io/pinont/skyports-image/java:8"
+  ],
+  "Cmd": "",
+  "Env": [
+    "START=java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar"
+  ],
+  "StopCommand": "stop",
+  "features": ["eula"],
+  "Scripts": {
+    "Install": [
+      {
+        "Uri": "https://cdn.getbukkit.org/spigot/spigot-{{Version}}.jar",
+        "Path": "server.jar"
+      },
+      {
+        "Uri": "https://raw.githubusercontent.com/skyport-team/images/main/spigotmc/server.properties",
+        "Path": "server.properties"
+      }
+    ]
+  },
+  "Variables": {
+    "Version": {
+      "type": "text",
+      "default": "1.21.8",
+      "required": true
+    }
+  },
+  "Name": "Minecraft Java: SpigotMC",
+  "Description": "SpigotMC is a high-performance, open-source server software for Minecraft, designed to enhance and optimize the game's multiplayer experience. It offers extensive configuration options, a vibrant plugin ecosystem, and active community support, making it a popular choice for server administrators seeking to improve gameplay and server performance.",
+  "Author": "pinont@pinont.com",
+  "AuthorName": "Pinont",
+  "Meta": {
+    "Version": "Pinont Skyport Images"
+  }
+}

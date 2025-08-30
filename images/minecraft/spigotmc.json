@@ -1,11 +1,12 @@
 {
-  "Image": "ghcr.io/pinont/skyports-image/java:24",
+  "Image": "ghcr.io/pinont/skyports-images/java:24",
   "AltImages": [
-    "ghcr.io/pinont/skyports-image/java:21",
-    "ghcr.io/pinont/skyports-image/java:17",
-    "ghcr.io/pinont/skyports-image/java:16",
-    "ghcr.io/pinont/skyports-image/java:11",
-    "ghcr.io/pinont/skyports-image/java:8"
+    "ghcr.io/pinont/skyports-images/java:24",
+    "ghcr.io/pinont/skyports-images/java:21",
+    "ghcr.io/pinont/skyports-images/java:17",
+    "ghcr.io/pinont/skyports-images/java:16",
+    "ghcr.io/pinont/skyports-images/java:11",
+    "ghcr.io/pinont/skyports-images/java:8"
   ],
   "Cmd": "",
   "Env": [

@@ -1,11 +1,12 @@
 {
-  "Image": "ghcr.io/skyport-team/images/java:21",
+  "Image": "ghcr.io/pinont/skyports-images/java:24",
   "AltImages": [
-    "ghcr.io/skyport-team/images/java:21",
-    "ghcr.io/skyport-team/images/java:17",
-    "ghcr.io/skyport-team/images/java:16",
-    "ghcr.io/skyport-team/images/java:11",
-    "ghcr.io/skyport-team/images/java:8"
+    "ghcr.io/pinont/skyports-images/java:24",
+    "ghcr.io/pinont/skyports-images/java:21",
+    "ghcr.io/pinont/skyports-images/java:17",
+    "ghcr.io/pinont/skyports-images/java:16",
+    "ghcr.io/pinont/skyports-images/java:11",
+    "ghcr.io/pinont/skyports-images/java:8"
   ],
   "Cmd": "",
   "Env": [
@@ -33,15 +34,15 @@
     },
     "Build": {
       "type": "text",
-      "default": "22",
+      "default": "56",
       "required": true
     }
   },
   "Name": "Minecraft Java: PaperMC",
   "Description": "PaperMC is an optimized, high-performance fork of SpigotMC for Minecraft servers. It aims to improve performance and stability by offering additional features, enhanced configuration options, and bug fixes. Known for its robust plugin compatibility and active development community, PaperMC is a preferred choice for server administrators looking to enhance their Minecraft multiplayer experience.",
-  "Author": "info@skyport.dev",
-  "AuthorName": "Skyport Team",
+  "Author": "pinont@pinont.com",
+  "AuthorName": "Pinont",
   "Meta": {
-    "Version": "Skyport Images (v2)"
+    "Version": "Pinont Skyports Images (v2)"
   }
 }
